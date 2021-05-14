@@ -1,21 +1,26 @@
 body {
-
+    font-family:'Gill Sans', 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 h1{
-
+    font-family: fantasy;
+    text-align: center;
 }
 
 h2{
-
+    font-family: fantasy;
+    text-align: center;
 }
 
 h3{
-
+    font-family: fantasy;
+    text-align: center;
 }
 
 p{
-    
+   
 }
 
 strong {
