@@ -10,64 +10,67 @@ body {
 h1{
     font-family: fantasy;
     text-align: center;
+    color:midnightblue;
 }
 
 h2{
     font-family: fantasy;
     text-align: center;
     padding-top: 100px;
+    color:midnightblue;
 }
 
 h4{
     font-family: fantasy;
     text-align: center;
     padding-top: 50px;
+    color:snow;
 }
 
-p{
-    
-}
-
-p:nth-of-type(4){
+#coffin{
 margin-top: -50px;
 margin-bottom: 35px;
 }
-p:nth-of-type(5){
+#stiletto{
 margin-top: -50px;
 margin-bottom: 35px;
 }
-p:nth-of-type(6){
+#almond{
 margin-top: -50px;
 margin-bottom: 35px;
 }
-p:nth-of-type(7){
+#square{
     margin-top: -50px;
     margin-bottom: 35px;
 }
-p:nth-of-type(8){
+#oval{
 margin-top: -50px;
 margin-bottom: 35px;
 }
-p:nth-of-type(9){
+#lipstick{
 margin-top: -50px;
 margin-bottom: 90px;
 }
 
 strong {
-
+    color:brown;
 }
 
 em{
-    
+    color: teal;
 }
 
 ul{
-
+    list-style-type:square;
 }
 
-ol{
-
-}
+ul li::before {
+    content: "▪";
+    color: white;
+    display: inline-block; width: 1em;
+  margin-left: -1em
+  }
+  
 li{
     margin-bottom: 20px;
 }
@@ -81,4 +84,5 @@ img{
 #border{
 outline:transparent 0px;
 border-radius: 0%;
+margin-bottom: -60px;
 }
