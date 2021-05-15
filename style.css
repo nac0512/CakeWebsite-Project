@@ -16,7 +16,7 @@ h1{
 h2{
     font-family: fantasy;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     color:midnightblue;
 }
 
@@ -25,6 +25,13 @@ h4{
     text-align: center;
     padding-top: 50px;
     color:snow;
+}
+
+h6{
+    font-family: fantasy;
+    text-align: center;
+    color:midnightblue;
+    font-size: 12px;
 }
 
 #coffin{
@@ -54,10 +61,16 @@ margin-bottom: 90px;
 
 strong {
     color:brown;
+    font-weight: 550;
 }
 
 em{
     color: teal;
+}
+
+ins{
+    text-decoration-line: underline;
+    text-decoration-color:darkmagenta;
 }
 
 ul{
@@ -70,7 +83,7 @@ ul li::before {
     display: inline-block; width: 1em;
   margin-left: -1em
   }
-  
+
 li{
     margin-bottom: 20px;
 }
