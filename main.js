@@ -1,6 +1,10 @@
+// Survey prompt to the user
 alert("Take this quiz to see which nail shape is best recommended for you!");
 
+// Create variable to store user answers as an array
 var choices = [];
+
+// Create dictionary to present questions without having to retype where needed
 
 var options = {
     first:["1: Classy, Sophisticated, Elegant \n 2: Simple, Comfortable, Casual \n 3: Trendy, New, Always Changing"],
@@ -11,20 +15,28 @@ var options = {
     sixth:["1: My nails often match my mood \n 2: I just want something cute that'll last \n 3: My nails absolutly have to match my outfit"]
 }
 
+// Create for loop to iterate through questions using prompts from dictionary 
+
 for(item in options) {
     var questions = Number(prompt("Which of these best describes you?\n\n " + options[item]));
 
+    // Validate questions return an acceptable answer, pass through questions to be reasked 
     questions = Check(questions, options[item])
 
+    // Add acceptable answers to previously created array 
     choices.push(questions);
 }
 
 console.log(choices);
 
+// Pass array to function and create variable to store most occuring number (will come back as an array)
 var result = mostOccurring(choices);
 
 console.log(result);
 
+//  Create loop to determing which result to show to user
+  // If there was a tie between multiple numbers, create "default" result
+  // Condition needs to account for length AND index number because if the index number is 1, but also has a second array item, it will show two results (not what we want)
 if(result.length == 1 && result[0] == 1) {
   alert("Your recommended nail shape is: Ballerina or Almond! \n\nWhether your relaxing in the house or getting ready for a night out with friends, you can't go wrong with this classy shape. Try it in long or short, you can keep it simple with traditional colors, or use the space to add some bling. Keep reading to find out more!");
 }
@@ -58,7 +70,8 @@ else {
 
 
 
-
+// Create function to validate user response is a number within the given parameters, if not, reprompt
+// Return accepted answer
 function Check(response, question) {
     while (isNaN(response) || response < 1 || response > 3) {
         response = Number(prompt("Please choose a valid number option:\n" + question))
@@ -67,12 +80,18 @@ function Check(response, question) {
     return response;
 }
 
-
+// Create function to find most occurring item in array
+// Return most occuring item(s) as an array
 function mostOccurring (result) {
+  // Create empty array to store values 
+  // Create object to store keys to compare to
+  // create counter
     var obj = {};
     var mostFreq = 0;
     var max = [];
 
+    // Create statement for if current array element has been counted before
+      // If not, change to one, otherwise, add one
     result.forEach(ea => {
       if (!obj[ea]) {
         obj[ea] = 1;
@@ -80,6 +99,8 @@ function mostOccurring (result) {
         obj[ea]++;
       }
 
+      // Compare keys (counts) values of the keys (array items) in the created object
+      // Add key (or keys) which the have the highest values to the empty array
       if (obj[ea] > mostFreq) {
         mostFreq = obj[ea];
         max = [ea];
@@ -88,5 +109,7 @@ function mostOccurring (result) {
       }
     });
 
+    // Return array of most occurring elements
     return max;
+     
   }
