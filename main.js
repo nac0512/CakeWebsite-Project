@@ -39,6 +39,7 @@ switch (result) {
         break;
 
     default:
+        alert("Wow! Looks like you matched with multiple nail shapes. Whether you want to look cute and casual or trendy and hip, you can't go wrong. Keep reading to find out more!");
         break;
 }
 
@@ -55,18 +56,25 @@ function Check(response, question) {
 }
 
 
-function mostOccurring(array) {
-    var max = array[0],
-        counter = {},
-        i = array.length,
-        element;
-    
-    while (i--) {
-        element = array[i];
-        if (!counter[element]) counter[element] = 0;
-        counter[element]++;
-        if (counter[max] < counter[element]) max = element;
-    }
+function mostOccurring (result) {
+    var obj = {};
+    var mostFreq = 0;
+    var max = [];
+
+    result.forEach(ea => {
+      if (!obj[ea]) {
+        obj[ea] = 1;
+      } else {
+        obj[ea]++;
+      }
+
+      if (obj[ea] > mostFreq) {
+        mostFreq = obj[ea];
+        max = [ea];
+      } else if (obj[ea] === mostFreq) {
+        max.push(ea);
+      }
+    });
 
     return max;
-}
+  }
