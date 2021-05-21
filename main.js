@@ -12,7 +12,7 @@ var options = {
 }
 
 for(item in options) {
-    var questions = Number(prompt("Which of these best describes you?\n " + options[item]));
+    var questions = Number(prompt("Which of these best describes you?\n\n " + options[item]));
 
     questions = Check(questions, options[item])
 
@@ -25,23 +25,35 @@ var result = mostOccurring(choices);
 
 console.log(result);
 
-switch (result) {
-    case 1:
-        alert("Your recommended nail shape is: Ballerina or Almond! \n\nWhether your relaxing in the house or getting ready for a night out with friends, you can't go wrong with this classy shape. Try it in long or short, you can keep it simple with traditional colors, or use the space to add some bling. Keep reading to find out more!");
-        break;
-
-    case 2:
-        alert("Your recommended nail shape is: Square or Oval! \n\nSimple and casual, this nail shape is best suited for your every day needs. Try these shapes in medium and short lengths and no matter how outdoorsy or hands on you get, you manicure is sure to always look fresh. Keep reading to find out more!");
-        break;
-
-    case 3:
-        alert("Your recommended nail shape is: Stilleto or Lipstick! \n\nWhen it comes to keeping up with the latest trends, you're the one setting them. These nail shapes require a bold personality to pull them off, and you've clearly got what it takes. Whether you keep them plain or add bling, these nails will definitely add some flare to your look. Keep reading to find out more!");
-        break;
-
-    default:
-        alert("Wow! Looks like you matched with multiple nail shapes. Whether you want to look cute and casual or trendy and hip, you can't go wrong. Keep reading to find out more!");
-        break;
+if(result.length == 1 && result[0] == 1) {
+  alert("Your recommended nail shape is: Ballerina or Almond! \n\nWhether your relaxing in the house or getting ready for a night out with friends, you can't go wrong with this classy shape. Try it in long or short, you can keep it simple with traditional colors, or use the space to add some bling. Keep reading to find out more!");
 }
+else if(result.length == 1 && result[0] == 2) {
+   alert("Your recommended nail shape is: Square or Oval! \n\nSimple and casual, this nail shape is best suited for your every day needs. Try these shapes in medium and short lengths and no matter how outdoorsy or hands on you get, you manicure is sure to always look fresh. Keep reading to find out more!");
+}
+else if(result.length == 1 && result[0] == 3) {
+   alert("Your recommended nail shape is: Stilleto or Lipstick! \n\nWhen it comes to keeping up with the latest trends, you're the one setting them. These nail shapes require a bold personality to pull them off, and you've clearly got what it takes. Whether you keep them plain or add bling, these nails will definitely add some flare to your look. Keep reading to find out more!");
+}
+else {
+  alert("Wow! Looks like you matched with multiple nail shapes. Whether you want to look cute and casual or trendy and hip, you can't go wrong. Keep reading to find out more!");
+}
+
+// switch (result) {
+//     case 1:
+//         alert("Your recommended nail shape is: Ballerina or Almond! \n\nWhether your relaxing in the house or getting ready for a night out with friends, you can't go wrong with this classy shape. Try it in long or short, you can keep it simple with traditional colors, or use the space to add some bling. Keep reading to find out more!");
+//         break;
+//     case 2: 
+//         alert("Your recommended nail shape is: Square or Oval! \n\nSimple and casual, this nail shape is best suited for your every day needs. Try these shapes in medium and short lengths and no matter how outdoorsy or hands on you get, you manicure is sure to always look fresh. Keep reading to find out more!");
+//         break;
+//     case 3:
+//         alert("Your recommended nail shape is: Stilleto or Lipstick! \n\nWhen it comes to keeping up with the latest trends, you're the one setting them. These nail shapes require a bold personality to pull them off, and you've clearly got what it takes. Whether you keep them plain or add bling, these nails will definitely add some flare to your look. Keep reading to find out more!"); 
+//         break;
+
+//     default:
+//         alert("Wow! Looks like you matched with multiple nail shapes. Whether you want to look cute and casual or trendy and hip, you can't go wrong. Keep reading to find out more!");
+//         break;
+// }
+
 
 
 
