@@ -124,3 +124,18 @@ input{
     background-color:black;
     display: none;
 }
+
+#again{
+    height: 50px;
+    width: 150px;
+    font-size: medium;
+    color: white;
+    background-color:black;
+    display: none;
+}
+
+#result {
+    margin-top: -40px;
+    margin-left: 500px;
+    margin-right: 500px;
+}

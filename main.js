@@ -11,11 +11,14 @@ var options = {
 }
 
 var display = {
-  result1:["Your recommended nail shape is: <strong>Ballerina or Almond!</strong> <br><br> Whether your relaxing in the house or getting ready for a night out with friends, you can't go wrong with this classy shape. Try it in long or short, you can keep it simple with traditional colors, or use the space to add some bling. Keep reading to find out more!"],
-  result2:["Your recommended nail shape is: <strong>Square or Oval!</strong> <br><br> Simple and casual, this nail shape is best suited for your every day needs. Try these shapes in medium and short lengths and no matter how outdoorsy or hands on you get, you manicure is sure to always look fresh. Keep reading to find out more!"],
-  result3:["Your recommended nail shape is: <strong>Stiletto or Lipstick!</strong> <br><br> When it comes to keeping up with the latest trends, you're the one setting them. These nail shapes require a bold personality to pull them off, and you've clearly got what it takes. Whether you keep them plain or add bling, these nails will definitely add some flare to your look. Keep reading to find out more!"],
-  result4:["Wow! Looks like you matched with multiple nail shapes. Whether you want to look cute and casual or trendy and hip, you can't go wrong. Keep reading to find out more!"]
+  result1:["Your recommended nail shape is: <strong>Ballerina or Almond!</strong> <br><br> Whether your relaxing in the house or getting ready for a night out with friends, you can't go wrong with this classy shape. Try it in long or short, you can keep it simple with traditional colors, or use the space to add some bling. Keep reading to find out how to do them yourself!"],
+  result2:["Your recommended nail shape is: <strong>Square or Oval!</strong> <br><br> Simple and casual, this nail shape is best suited for your every day needs. Try these shapes in medium and short lengths and no matter how outdoorsy or hands on you get, you manicure is sure to always look fresh. Keep reading to find out how to do them yourself!"],
+  result3:["Your recommended nail shape is: <strong>Stiletto or Lipstick!</strong> <br><br> When it comes to keeping up with the latest trends, you're the one setting them. These nail shapes require a bold personality to pull them off, and you've clearly got what it takes. Whether you keep them plain or add bling, these nails will definitely add some flare to your look. Keep reading to find out how to do them yourself!"],
+  result4:["Wow! Looks like you matched with multiple nail shapes. Whether you want to look cute and casual or trendy and hip, you can't go wrong. Keep reading to find out how to do them yourself!"]
 }
+
+
+
 
 document.getElementById('quiz').onclick = takeQuiz;
 
@@ -43,12 +46,35 @@ function takeQuiz() {
   document.getElementById('input6').style.display = 'inline-block';
 
   document.getElementById('submit').style.display = 'inline-block';
-
 }
+
+
+
 
 document.getElementById('submit').onclick = results;
 
 function results() {
+  document.getElementById('prompt').style.display = 'none';
+
+  document.getElementById('question1').style.display = 'none';
+  document.getElementById('input1').style.display = 'none';
+
+  document.getElementById('question2').style.display = 'none';
+  document.getElementById('input2').style.display = 'none';
+
+  document.getElementById('question3').style.display = 'none';
+  document.getElementById('input3').style.display = 'none';
+
+  document.getElementById('question4').style.display = 'none';
+  document.getElementById('input4').style.display = 'none';
+
+  document.getElementById('question5').style.display = 'none';
+  document.getElementById('input5').style.display = 'none';
+
+  document.getElementById('question6').style.display = 'none';
+  document.getElementById('input6').style.display = 'none';
+
+  document.getElementById('submit').style.display = 'none';
 
   var answer1 = document.getElementById('input1').value;
   var answer2 = document.getElementById('input2').value;
@@ -73,24 +99,28 @@ function results() {
     document.getElementById('result').innerHTML = display['result4'];
   }
 
+  document.getElementById('start').scrollIntoView({behavior: 'smooth'});
+
+  document.getElementById('again').style.display = 'inline-block';
 }
 
-//  Create loop to determing which result to show to user
-  // If there was a tie between multiple numbers, create "default" result
-  // Condition needs to account for length AND index number because if the index number is 1, but also has a second array item, it will show two results (not what we want)
 
-// Create function to find most occurring item in array
-// Return most occuring item(s) as an array
+
+
+document.getElementById('again').onclick = takeAgain;
+
+function takeAgain() {
+ window.location.reload();
+}
+
+
+
+
 function mostOccurring (result) {
-  // Create empty array to store values 
-  // Create object to store keys to compare to
-  // create counter
     var obj = {};
     var mostFreq = 0;
     var max = [];
 
-    // Create statement for if current array element has been counted before
-      // If not, change to one, otherwise, add one
     result.forEach(ea => {
       if (!obj[ea]) {
         obj[ea] = 1;
@@ -98,8 +128,6 @@ function mostOccurring (result) {
         obj[ea]++;
       }
 
-      // Compare keys (counts) values of the keys (array items) in the created object
-      // Add key (or keys) which the have the highest values to the empty array
       if (obj[ea] > mostFreq) {
         mostFreq = obj[ea];
         max = [ea];
@@ -108,7 +136,5 @@ function mostOccurring (result) {
       }
     });
 
-    // Return array of most occurring elements
     return max;
-
   }
