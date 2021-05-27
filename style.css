@@ -99,3 +99,11 @@ outline:transparent 0px;
 border-radius: 0%;
 margin-bottom: -60px;
 }
+
+button{
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    color: white;
+    background-color:black;
+}
