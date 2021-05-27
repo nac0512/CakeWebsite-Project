@@ -100,10 +100,27 @@ border-radius: 0%;
 margin-bottom: -60px;
 }
 
-button{
+#quiz{
     height: 50px;
     width: 150px;
     font-size: large;
     color: white;
     background-color:black;
+}
+
+input{
+    height: 30px;
+    width: 45px;
+    font-size: medium;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#submit{
+    height: 30px;
+    width: 100px;
+    font-size: medium;
+    color: white;
+    background-color:black;
+    display: none;
 }

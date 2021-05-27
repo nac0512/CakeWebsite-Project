@@ -1,31 +1,52 @@
-// // Survey prompt to the user
-// alert("Take this quiz to see which nail shape is best recommended for you!");
 
-// // Create variable to store user answers as an array
-// var choices = [];
+// Create variable to store user answers as an array
+ var choices = [];
 
-// // Create dictionary to present questions without having to retype where needed
+// Create dictionary to present questions without having to retype where needed
+var options = {
+    first:["1: Classy, Sophisticated, Elegant <br><br> 2: Simple, Comfortable, Casual <br><br> 3: Trendy, New, Always Changing"],
+    second:["1: I have long, slender hands <br><br> 2: I have wide, short hands <br><br> 3: I have wide palms with long fingers"],
+    third:["1: When I'm not at work or school, I enjoy a fun night with my friends <br><br> 2: You can find me gardening, typing, and doing other hands-on things <br><br> 3: You can find me where the party's at"],
+    fourth:["1: Quiet evening in the 'burbs <br><br> 2: Take me to the beach <br><br> 3: City life all the way"],
+    fifth:["1: Matte or gloss with painted designs are my go-to <br><br> 2: One or two coats of polish and I'm good <br><br> 3: I want all the bling"],
+    sixth:["1: My nails often match my mood <br><br> 2: I just want something cute that'll last <br><br> 3: My nails absolutly have to match my outfit"]
+}
 
-// var options = {
-//     first:["1: Classy, Sophisticated, Elegant \n 2: Simple, Comfortable, Casual \n 3: Trendy, New, Always Changing"],
-//     second:["1: I have long, slender hands \n 2: I have wide, short hands \n 3: I have wide palms with long fingers"],
-//     third:["1: When I'm not at work or school, I enjoy a fun night with my friends \n 2: You can find me gardening, typing, and doing other hands-on things \n 3: You can find me where the party's at"],
-//     fourth:["1: Quiet evening in the 'burbs \n 2: Take me to the beach \n 3: City life all the way"],
-//     fifth:["1: Matte or gloss with painted designs are my go-to \n 2: One or two coats of polish and I'm good \n 3: I want all the bling"],
-//     sixth:["1: My nails often match my mood \n 2: I just want something cute that'll last \n 3: My nails absolutly have to match my outfit"]
-// }
+document.getElementById('quiz').onclick = takeQuiz;
 
-// // Create for loop to iterate through questions using prompts from dictionary 
+function takeQuiz() {
+  document.getElementById('quiz').style.display = 'none';
 
-// for(item in options) {
-//     var questions = Number(prompt("Which of these best describes you?\n\n " + options[item]));
+  document.getElementById('prompt').innerHTML = "Select the number of the one you feel best describes you:";
 
-//     // Validate questions return an acceptable answer, pass through questions to be reasked 
-//     questions = Check(questions, options[item])
+  document.getElementById('question1').innerHTML = options['first'];
+  document.getElementById('input1').style.display = 'inline-block';
 
-//     // Add acceptable answers to previously created array 
-//     choices.push(questions);
-// }
+  document.getElementById('question2').innerHTML = options['second'];
+  document.getElementById('input2').style.display = 'inline-block';
+
+  document.getElementById('question3').innerHTML = options['third'];
+  document.getElementById('input3').style.display = 'inline-block';
+
+  document.getElementById('question4').innerHTML = options['fourth'];
+  document.getElementById('input4').style.display = 'inline-block';
+
+  document.getElementById('question5').innerHTML = options['fifth'];
+  document.getElementById('input5').style.display = 'inline-block';
+
+  document.getElementById('question6').innerHTML = options['sixth'];
+  document.getElementById('input6').style.display = 'inline-block';
+
+  document.getElementById('submit').style.display = 'inline-block';
+
+}
+
+document.getElementById('submit').onclick = results;
+
+function results() {
+
+  choices.push(questions);
+}
 
 // // Pass array to function and create variable to store most occuring number (will come back as an array)
 // var result = mostOccurring(choices);
