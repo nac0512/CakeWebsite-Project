@@ -103,3 +103,25 @@ tbody>:nth-child(even) {
     background-color: #ffffff65;
 }
 
+/************** Consultation Article **************/
+article {
+    margin: 2rem 23.5rem;
+}
+
+article a {
+    padding: .6rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #c89e97;
+    color: #ffffff;
+}
+
+article a:hover {
+    background-color: #f5cfcaf1;
+    color: #c89e97;
+}
+
+article p:nth-of-type(2) {
+    margin-bottom: 4rem;
+}
+
