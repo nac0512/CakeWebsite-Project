@@ -1,5 +1,5 @@
-/************** Full Page **************/
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+/* ************* Full Page ************* */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 body, nav, h1, h2, h3, ul, li, a {
     list-style: none;
@@ -8,11 +8,10 @@ body, nav, h1, h2, h3, ul, li, a {
     color: #777777;
 }
 
-h1, nav, h2, section, article, table, footer {
-    max-width: 100rem;
+header, section, article, footer {
+    max-width: 80rem;
 	margin: 0 auto;
     padding: 1rem;
-    text-align: center;
     line-height: 1.8rem;
 }
 
@@ -30,11 +29,12 @@ h1 a, h2, h3 {
 h1 a, h2 {
     font-family: 'Amatic SC', cursive;
     letter-spacing: .10rem;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 h1 a::before {
     content: url("images/wedding-cake.png");
+    padding-left: 4rem;
 }
 
 h3 {
@@ -56,9 +56,10 @@ img:hover {
 /************** Header **************/
 header {
     background-color: #ffffff;
-    border-bottom: #a0a0a049 dashed .1rem;
+    border-bottom: #a0a0a049 dashed .15rem;
     border-radius: 50%;
     margin-bottom: 2rem;
+    padding: 0 20rem 3rem 20rem;
 }
 
 nav li {
@@ -73,39 +74,49 @@ nav a{
 }
 
 /************** Variety of Cakes **************/
+#types {
+    text-align: center;
+}
+
 #types li {
+    display: inline-block;
     margin: 0 2rem;
     width: 15rem;
 }
 
 /************** Pricing **************/
 #pricing {
-    width: 100rem;
+    max-width: 110rem;
     height: 40rem;
+    text-align: center;
     background-image: url("images/backgroundcake.jpeg");
     background-size: cover;
     color: #ffffff;
 }
 
-th h3, #pricing h2 {
+#pricing h2, #pricing h3 {
     color: #ffffff;
 }
 
 th, td {
     border: .01rem solid #ffffff;
     width: 25rem;
-    height: 3rem;
-    text-align: center;
-    vertical-align: middle;
+    height: 2.5rem;
 }
 
 tbody>:nth-child(even) {
     background-color: #ffffff65;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
 /************** Consultation Article **************/
 article {
-    margin: 2rem 23.5rem;
+    max-width: 60rem;
+    text-align: center;
 }
 
 article a {
@@ -124,4 +135,6 @@ article a:hover {
 article p:nth-of-type(2) {
     margin-bottom: 4rem;
 }
+
+/************** Gallery **************/
 
