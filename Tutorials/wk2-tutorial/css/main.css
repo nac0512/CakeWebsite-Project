@@ -1,0 +1,165 @@
+/* Google Fonts ======================== */
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400i');
+/* CSS Reset =========================== */
+
+body, nav, section, footer, article, h1, h2, h3, p, a, ul, li, dt, dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
+}
+
+/* Typography Defaults ================= */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	font-family: "Open Sans", sans-serif;
+	color: #777777;
+	background-color: #222222;
+}
+
+h1, h2 {
+	line-height: 1;
+	font-family: "Abel", sans-serif;
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 7rem;
+	margin: 2rem 0 4rem 0;
+}
+
+h2 {
+	font-size: 2.6rem;
+	margin: 2rem 0 1rem 0;
+}
+
+h3 {
+	font-size: 1.6rem;
+	color: #aaaaaa;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+img {
+	display: block;
+	min-height: 15rem;
+	background: rgba(255,255,255,.1);
+}
+
+a {
+	display: inline-block;
+	padding: .5rem 1rem;
+	background-color: rgba(255,255,255,.1);
+	color: #eeeeee;
+}
+
+/* Default Structure =================== */
+nav, body > section, footer {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 3rem;
+	/* outline: 2px solid darkgoldenrod; */
+}
+
+body > section {
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+/* Header ============================== */
+header {
+	background: #ffffff;
+}
+
+nav a {
+	color: #555555;
+}
+
+#logo {
+	display: inline-block;
+	width: 10rem;
+	min-height: 3rem;
+	background: rgba(0,0,0,.2);
+}
+
+nav li {
+	display: inline-block;
+}
+
+/* Blog ================================ */
+#blog article:nth-of-type(1) {
+	border-top: .5rem solid #e74c3c;
+}
+
+#blog article:nth-of-type(2) {
+	border-top: .5rem solid #f1c40f;
+}
+
+#blog article:nth-of-type(3) {
+	border-top: .5rem solid #1abc9c;
+}
+
+/* News ================================ */
+time span {
+	font-size: 5rem;
+	color: #eeeeee;
+	vertical-align: middle;
+}
+
+/* About================================ */
+#about section:nth-of-type(1) {
+	background-color: darkgreen;
+	color: darksalmon;
+}
+
+#about section:nth-of-type(2) {
+	background-color: purple;
+	color: royalblue;
+}
+
+#about h2 {
+	font-family: Impact,'Arial Narrow Bold', sans-serif;
+}
+
+#about h3 {
+	font-family: cursive, fantasy,'Times New Roman', Times, serif;
+}
+
+/* Donation ============================ */
+#donation {
+	background-image: url("../cool-background.png");
+	background-repeat: no-repeat;
+}
+
+/* Footer ============================== */
+footer {
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+footer h2 {
+	font-size: 1.6rem;
+	color: #aaaaaa;
+	margin-bottom: 1rem;
+}
+
+#tags li {
+	display: inline-block;
+}
+
+#tags a {
+	background-color: #e74c3c;
+	color: #eeeeee;
+	padding: 0 .5rem .25rem .5rem;
+}
