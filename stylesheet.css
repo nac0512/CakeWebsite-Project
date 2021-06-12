@@ -1,54 +1,79 @@
-/* Full Page */
+/************** Full Page **************/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 body, nav, h1, h2, h3, ul, li, a {
-    font-size: 100%;
     list-style: none;
     text-decoration: none;
     font-weight: normal;
     color: #777777;
 }
 
-/* header, section, article, footer {
-    max-width: 50rem;
+h1, nav, h2, section, article, table, footer {
+    max-width: 100rem;
 	margin: 0 auto;
-	padding: 3rem;
-} */
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
 
-body{
+body, li, a{
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .02rem;
 }
 
 h1 a, h2, h3 {
     color: #555555;
-    font-weight: 700;
+    font-weight: 800;
 }
 
-h1, h2 {
+h1 a, h2 {
     font-family: 'Amatic SC', cursive;
-    letter-spacing: 3px;
+    letter-spacing: .10rem;
     font-size: 3rem;
+}
+
+h1 a::before {
+    content: url("images/wedding-cake.png");
 }
 
 h3 {
     text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    border: .4rem solid #e6c1bb9c;
     border-radius: 50%;
-    border-color: ;
 }
 
-/* Header */
+img:hover {
+    border-color: #bb8c84;
+}
+
+/************** Header **************/
 header {
     background-color: #ffffff;
-    padding: 1.8rem 0 1.8rem 0;
+    border-bottom: #a0a0a049 dashed .1rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
-nav li{
+nav li {
     display: inline-block;
+    padding: 0 1.5rem;
+}
+
+nav a{
     color: #555555;
     font-weight: 700;
+    font-size: .9rem;
+}
+
+/************** Variety of Cakes **************/
+#types li {
+    margin: 0 2rem;
+    width: 15rem;
 }
