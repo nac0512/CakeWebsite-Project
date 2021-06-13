@@ -21,6 +21,10 @@ body, li, a{
     letter-spacing: .02rem;
 }
 
+main, footer {
+    text-align: center;
+}
+
 h1 a, h2, h3 {
     color: #555555;
     font-weight: 800;
@@ -74,12 +78,7 @@ nav a{
 }
 
 /************** Variety of Cakes **************/
-#types {
-    text-align: center;
-}
-
 #types li {
-    display: inline-block;
     margin: 0 2rem;
     width: 15rem;
 }
@@ -116,7 +115,6 @@ table {
 /************** Consultation Article **************/
 article {
     max-width: 60rem;
-    text-align: center;
 }
 
 article a {
@@ -139,13 +137,11 @@ article p:nth-of-type(2) {
 /************** Gallery **************/
 #gallery, #gallery h2, #gallery h3 {
     max-width: 110rem;
-    text-align: center;
     background-color: #e0b1a9;
     color: #ffffff;
 }
 
 #gallery li {
-    display: inline-block;
     padding: 1rem;
 }
 
@@ -153,4 +149,18 @@ article p:nth-of-type(2) {
     color: #c89e97;
     text-shadow: #ddbeb9 1px 0px, #ddbeb9 1px 1px, #ddbeb9 0px 1px, #ddbeb9 -1px 1px, #ddbeb9 -1px 0px, #ddbeb9 -1px -1px, #ddbeb9 0px -1px, #ddbeb9 1px -1px;
 }
+
+/************** Flavors **************/
+#flavors ul {
+    vertical-align: top;
+}
+
+#flavors a {
+    line-height: 2.3rem;
+}
+
+#flavors a:hover {
+    color: #e0b1a9;
+}
+
 
