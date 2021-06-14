@@ -95,13 +95,13 @@ nav a{
 }
 
 /************** Variety of Cakes **************/
-#types li {
+section:nth-of-type(1) li {
     margin: 0 2rem;
     width: 15rem;
 }
 
 /************** Pricing **************/
-#pricing {
+section:nth-of-type(2) {
     max-width: 110rem;
     height: 40rem;
     text-align: center;
@@ -110,7 +110,7 @@ nav a{
     color: #ffffff;
 }
 
-#pricing h2, #pricing h3 {
+section:nth-of-type(2) h2, section:nth-of-type(2) h3 {
     color: #ffffff;
 }
 
@@ -152,31 +152,31 @@ article p:nth-of-type(2) {
 }
 
 /************** Gallery **************/
-#gallery, #gallery h2, #gallery h3 {
+section:nth-of-type(3), section:nth-of-type(3) h2, section:nth-of-type(3) h3 {
     max-width: 110rem;
     background-color: #e0b1a9;
     color: #ffffff;
 }
 
-#gallery li {
+section:nth-of-type(3) li {
     padding: 1rem;
 }
 
-#gallery h3:hover {
+section:nth-of-type(3) h3:hover {
     color: #c89e97;
     text-shadow: #ddbeb9 1px 0px, #ddbeb9 1px 1px, #ddbeb9 0px 1px, #ddbeb9 -1px 1px, #ddbeb9 -1px 0px, #ddbeb9 -1px -1px, #ddbeb9 0px -1px, #ddbeb9 1px -1px;
 }
 
 /************** Flavors **************/
-#flavors ul {
+section:nth-of-type(4) ul {
     vertical-align: top;
 }
 
-#flavors a {
+section:nth-of-type(4) a {
     line-height: 2.3rem;
 }
 
-#flavors a:hover {
+section:nth-of-type(4) a:hover {
     color: #e0b1a9;
 }
 
@@ -208,7 +208,7 @@ footer li a {
     color: transparent;
 }
 
-footer a, h3 {
+footer a, footer h3 {
     color: #ffffff;
 }
 
