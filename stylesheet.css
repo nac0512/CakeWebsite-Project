@@ -61,6 +61,19 @@ img:hover {
     border-color: #bb8c84;
 }
 
+/************** Navigation **************/
+nav li:nth-of-type(3) a {
+    border-bottom: #555555b2 dashed .10rem;
+    background-clip: content-box;
+    padding-bottom: 1rem;
+}
+
+nav a:hover {
+    border-bottom: #555555b2 dashed .10rem;
+    background-clip: content-box;
+    padding-bottom: 1rem;
+}
+
 /************** Header **************/
 header {
     background-color: #ffffff;
