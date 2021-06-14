@@ -237,6 +237,11 @@ button {
     margin-left: 1.3rem;
 }
 
+button:hover {
+    background-color: #ffdcd6;
+    color: #e0b1a9;
+}
+
 p a:hover {
     color: #e0b1a9;
 }
