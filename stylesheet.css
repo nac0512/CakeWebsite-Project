@@ -30,15 +30,19 @@ h1 a, h2, h3 {
     font-weight: 800;
 }
 
-h1 a, h2 {
+h1 a, h2, footer h3 {
     font-family: 'Amatic SC', cursive;
     letter-spacing: .10rem;
     font-size: 2.8rem;
 }
 
-h1 a::before {
-    content: url("images/wedding-cake.png");
+header h1 a::before {
+    content: url("images/logo.png");
     padding-left: 4rem;
+}
+
+footer h1 a::before {
+    content: url("images/logo-white.png");
 }
 
 h3 {
@@ -163,4 +167,84 @@ article p:nth-of-type(2) {
     color: #e0b1a9;
 }
 
+/************** Footer **************/
+footer {
+    color: #ffffff;
+    max-width: 110rem;
+    background-image: url("images/footerbackground.jpg");
+    background-size: cover;
+    border-top: #a0a0a049 dashed .15rem;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background-clip: content-box;
+    padding: .5rem;
+}
 
+footer ul{
+    margin: 5rem 30rem;
+    border-bottom: #e0b1a988 dashed .10rem;
+    
+}
+
+footer li {
+    display: inline-block;
+    line-height: 10rem;
+}
+
+footer li a {
+    color: transparent;
+}
+
+footer a, h3 {
+    color: #ffffff;
+}
+
+footer h1 {
+    margin: 5rem 30rem 0 30rem;
+    border-top: #e0b1a988 dashed .10rem;
+    background-clip: content-box;
+    padding-top: 2rem;
+}
+
+input {
+    width: 25rem;
+    height: 2rem;
+    font-size: .9rem;
+    color: #777777;
+    text-indent: 1rem;
+}
+
+button {
+    border: 0;
+    padding: .6rem 3.5rem;
+    font-size: .9rem;
+    font-weight: 700;
+    background-color: #c89e97;
+    color: #ffffff;
+    margin-left: 1.3rem;
+}
+
+p a:hover {
+    color: #e0b1a9;
+}
+
+/************** Socials **************/
+footer li:nth-of-type(1) a::before {
+    content: url("images/twitter.png");
+}
+
+footer li:nth-of-type(2) a::before {
+    content: url("images/facebook.png");
+}
+
+footer li:nth-of-type(3) a::before {
+    content: url("images/google-plus-logo.png");
+}
+
+footer li:nth-of-type(4) a::before {
+    content: url("images/instagram-symbol.png");
+}
+
+footer li:nth-of-type(5) a::before {
+    content: url("images/pinterest-sign.png");
+}
