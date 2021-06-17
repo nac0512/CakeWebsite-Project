@@ -1,53 +1,57 @@
-/* ************* Full Page ************* */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+/* ************* Cross Sections ************* */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
-body, nav, h1, h2, h3, ul, li, a {
+body, header, nav, section, article, footer, h1, h2, h3, p, ul, li, table, a, input, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
     list-style: none;
     text-decoration: none;
     font-weight: normal;
     color: #777777;
 }
 
-header, section, article, footer {
-    max-width: 80rem;
-	margin: 0 auto;
-    padding: 1rem;
-    line-height: 1.8rem;
+html {
+    font-size: 62.5%;
 }
 
-body, li, a{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    letter-spacing: .02rem;
+body {
+    font: 400 1.6rem/1.8 'Open Sans', sans-serif;
 }
 
 main, footer {
     text-align: center;
 }
 
-h1 a, h2, h3 {
+h1 a, h2, h3{
     color: #555555;
-    font-weight: 800;
 }
 
 h1 a, h2, footer h2 a {
-    font-family: 'Amatic SC', cursive;
-    letter-spacing: .10rem;
-    font-size: 2.8rem;
+    font: 700 4rem 'Amatic SC', cursive;
+    letter-spacing: .3rem;
 }
 
 header h1 a::before {
-    content: url("images/logo.png");
+    content: url("../images/logo.png");
     padding-left: 4rem;
 }
 
 footer h2:nth-of-type(2) a::before {
-    content: url("images/logo-white.png");
+    content: url("../images/logo-white.png");
+}
+
+h3, th {
+    font: 700 1.4rem 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 2rem 0;
 }
 
 h3 {
-    text-transform: uppercase;
-    font-size: 0.9rem;
+    margin: 1.2rem 0;
 }
 
 img {
@@ -75,12 +79,14 @@ nav a:hover {
 }
 
 /************** Header **************/
-header {
-    background-color: #ffffff;
-    border-bottom: #a0a0a049 dashed .15rem;
+header .wrapper{
+    max-width: 100rem;
+    margin: 3rem auto 5rem auto;
+}
+
+header{
+    border-bottom: #a0a0a049 dashed .20rem;
     border-radius: 50%;
-    margin-bottom: 2rem;
-    padding: 0 20rem 3rem 20rem;
 }
 
 nav li {
@@ -89,28 +95,21 @@ nav li {
 }
 
 nav a{
+    font: 700 1.4rem 'Open Sans', sans-serif;
     color: #555555;
-    font-weight: 700;
-    font-size: .9rem;
 }
 
 /************** Variety of Cakes **************/
-section:nth-of-type(1) li {
-    margin: 0 2rem;
-    width: 15rem;
-}
 
 /************** Pricing **************/
-section:nth-of-type(2) {
-    max-width: 110rem;
-    height: 40rem;
-    text-align: center;
-    background-image: url("images/backgroundcake.jpeg");
+#pricing {
+    height: 65rem;
+    background-image: url("../images/backgroundcake.jpeg");
     background-size: cover;
     color: #ffffff;
 }
 
-section:nth-of-type(2) h2, section:nth-of-type(2) h3 {
+#pricing h2 {
     color: #ffffff;
 }
 
@@ -118,6 +117,7 @@ th, td {
     border: .01rem solid #ffffff;
     width: 25rem;
     height: 2.5rem;
+    color: #ffffff;
 }
 
 tbody>:nth-child(even) {
@@ -131,7 +131,8 @@ table {
 
 /************** Consultation Article **************/
 article {
-    max-width: 60rem;
+    max-width: 100rem;
+    margin: 0rem auto;
 }
 
 article a {
@@ -148,39 +149,37 @@ article a:hover {
 }
 
 article p:nth-of-type(2) {
-    margin-bottom: 4rem;
+    margin: 1.5rem 0 4rem 0;
 }
 
 /************** Gallery **************/
-section:nth-of-type(3), section:nth-of-type(3) h2, section:nth-of-type(3) h3 {
-    max-width: 110rem;
+#gallery, #gallery h2, #gallery h3 {
     background-color: #e0b1a9;
     color: #ffffff;
 }
 
-section:nth-of-type(3) li {
+#gallery li {
     padding: 1rem;
 }
 
-section:nth-of-type(3) h3:hover {
+#gallery h3:hover {
     color: #c89e97;
     text-shadow: #ddbeb9 1px 0px, #ddbeb9 1px 1px, #ddbeb9 0px 1px, #ddbeb9 -1px 1px, #ddbeb9 -1px 0px, #ddbeb9 -1px -1px, #ddbeb9 0px -1px, #ddbeb9 1px -1px;
 }
 
 /************** Flavors **************/
-section:nth-of-type(4) a {
+#flavors a {
     line-height: 2.3rem;
 }
 
-section:nth-of-type(4) a:hover {
+#flacors a:hover {
     color: #e0b1a9;
 }
 
 /************** Footer **************/
 footer {
     color: #ffffff;
-    max-width: 110rem;
-    background-image: url("images/footerbackground.jpg");
+    background-image: url("../images/footerbackground.jpg");
     background-size: cover;
     border-top: #a0a0a049 dashed .15rem;
     border-top-left-radius: 30%;
@@ -198,7 +197,7 @@ footer li a {
     color: transparent;
 }
 
-footer a, footer h2 {
+footer a, footer h2, footer p {
     color: #ffffff;
 }
 
@@ -238,21 +237,21 @@ p a:hover {
 
 /************** Socials **************/
 footer li:nth-of-type(1) a::before {
-    content: url("images/twitter.png");
+    content: url("../images/twitter.png");
 }
 
 footer li:nth-of-type(2) a::before {
-    content: url("images/facebook.png");
+    content: url("../images/facebook.png");
 }
 
 footer li:nth-of-type(3) a::before {
-    content: url("images/google-plus-logo.png");
+    content: url("../images/google-plus-logo.png");
 }
 
 footer li:nth-of-type(4) a::before {
-    content: url("images/instagram-symbol.png");
+    content: url("../images/instagram-symbol.png");
 }
 
 footer li:nth-of-type(5) a::before {
-    content: url("images/pinterest-sign.png");
+    content: url("../images/pinterest-sign.png");
 }
