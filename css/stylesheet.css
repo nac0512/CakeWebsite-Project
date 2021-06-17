@@ -47,7 +47,7 @@ h3, th {
 }
 
 h2 {
-    margin: 2rem 0;
+    margin: 5rem 0;
 }
 
 h3 {
@@ -83,7 +83,7 @@ header h1 {
 /************** Navigation **************/
 nav li {
     display: inline-block;
-    padding: 0 1.5rem;
+    padding-right: 4.5rem;
 }
 
 nav a{
@@ -109,6 +109,21 @@ nav a:hover {
 }
 
 /************** Variety of Cakes **************/
+#types {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+#types li {
+    margin-right: 6rem;
+    width: calc(100%/4 - 6rem);
+    float: left;
+}
+
+#types::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
 /************** Pricing **************/
 #pricing {
