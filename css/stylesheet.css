@@ -65,7 +65,37 @@ img:hover {
     border-color: #bb8c84;
 }
 
+/************** Header **************/
+header .wrapper{
+    max-width: 120rem;
+    margin: 3rem auto 5rem auto;
+}
+
+header{
+    border-bottom: #a0a0a049 dashed .20rem;
+    border-radius: 50%;
+}
+
+header h1 {
+    display: inline;
+}
+
 /************** Navigation **************/
+nav li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+nav a{
+    font: 700 1.4rem 'Open Sans', sans-serif;
+    color: #555555;
+}
+
+nav {
+    float: right;
+    padding-top: 1.5rem;
+}
+
 nav li:nth-of-type(3) a {
     border-bottom: #555555b2 dashed .10rem;
     background-clip: content-box;
@@ -76,27 +106,6 @@ nav a:hover {
     border-bottom: #555555b2 dashed .10rem;
     background-clip: content-box;
     padding-bottom: 1rem;
-}
-
-/************** Header **************/
-header .wrapper{
-    max-width: 100rem;
-    margin: 3rem auto 5rem auto;
-}
-
-header{
-    border-bottom: #a0a0a049 dashed .20rem;
-    border-radius: 50%;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0 1.5rem;
-}
-
-nav a{
-    font: 700 1.4rem 'Open Sans', sans-serif;
-    color: #555555;
 }
 
 /************** Variety of Cakes **************/
