@@ -30,7 +30,7 @@ h1 a, h2, h3 {
     font-weight: 800;
 }
 
-h1 a, h2, footer h3 {
+h1 a, h2, footer h2 a {
     font-family: 'Amatic SC', cursive;
     letter-spacing: .10rem;
     font-size: 2.8rem;
@@ -41,7 +41,7 @@ header h1 a::before {
     padding-left: 4rem;
 }
 
-footer h1 a::before {
+footer h2:nth-of-type(2) a::before {
     content: url("images/logo-white.png");
 }
 
@@ -168,10 +168,6 @@ section:nth-of-type(3) h3:hover {
 }
 
 /************** Flavors **************/
-section:nth-of-type(4) ul {
-    vertical-align: top;
-}
-
 section:nth-of-type(4) a {
     line-height: 2.3rem;
 }
@@ -193,12 +189,6 @@ footer {
     padding: .5rem;
 }
 
-footer ul{
-    margin: 5rem 30rem;
-    border-bottom: #e0b1a988 dashed .10rem;
-    
-}
-
 footer li {
     display: inline-block;
     line-height: 10rem;
@@ -208,12 +198,12 @@ footer li a {
     color: transparent;
 }
 
-footer a, footer h3 {
+footer a, footer h2 {
     color: #ffffff;
 }
 
-footer h1 {
-    margin: 5rem 30rem 0 30rem;
+footer h2 {
+    margin: 1rem 30rem 1rem 30rem;
     border-top: #e0b1a988 dashed .10rem;
     background-clip: content-box;
     padding-top: 2rem;
