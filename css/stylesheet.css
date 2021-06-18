@@ -161,7 +161,7 @@ table {
 /************** Consultation Article **************/
 article {
     max-width: 100rem;
-    margin: 0rem auto;
+    margin: 0rem auto 5rem auto;
     padding: 2rem 0;
 }
 
@@ -182,18 +182,34 @@ article p:nth-of-type(2) {
 }
 
 /************** Gallery **************/
-#gallery, #gallery h2, #gallery h3 {
+#gallery {
     background-color: #e0b1a9;
+    padding: 1rem 0 9rem 0;
+}
+
+#gallery h2, #gallery h3 {
     color: #ffffff;
 }
 
+#gallery ul {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
 #gallery li {
-    padding: 1rem;
+    width: calc(100%/6);
+    float: left;
 }
 
 #gallery h3:hover {
     color: #c89e97;
     text-shadow: #ddbeb9 1px 0px, #ddbeb9 1px 1px, #ddbeb9 0px 1px, #ddbeb9 -1px 1px, #ddbeb9 -1px 0px, #ddbeb9 -1px -1px, #ddbeb9 0px -1px, #ddbeb9 1px -1px;
+}
+
+#gallery::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 /************** Flavors **************/
