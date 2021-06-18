@@ -213,11 +213,31 @@ article p:nth-of-type(2) {
 }
 
 /************** Flavors **************/
+#flavors {
+    max-width: 120rem;
+    margin: 1rem auto 9rem auto;
+}
+
+#flavors section {
+    width: calc(100%/3);
+    float: left;
+}
+
+#flavors::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#flavors li {
+    line-height: 3.5rem;
+}
+
 #flavors a {
     line-height: 2.3rem;
 }
 
-#flacors a:hover {
+#flavors a:hover {
     color: #e0b1a9;
 }
 
