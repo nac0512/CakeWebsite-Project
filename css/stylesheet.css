@@ -127,10 +127,15 @@ nav a:hover {
 
 /************** Pricing **************/
 #pricing {
-    height: 65rem;
-    background-image: url("../images/backgroundcake.jpeg");
+    margin-top: 10rem;
+    background: url("../images/backgroundcake.jpeg") no-repeat;
     background-size: cover;
-    color: #ffffff;
+}
+
+#pricing .wrapper {
+    max-width: 120rem;
+    margin: 0rem auto;
+    padding: 1rem 0 8rem 0;
 }
 
 #pricing h2 {
@@ -139,18 +144,18 @@ nav a:hover {
 
 th, td {
     border: .01rem solid #ffffff;
-    width: 25rem;
-    height: 2.5rem;
+    width: 45rem;
+    height: 4.5rem;
     color: #ffffff;
 }
 
 tbody>:nth-child(even) {
-    background-color: #ffffff65;
+    background-color: #ffffff42;
 }
 
 table {
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 0rem auto;
 }
 
 /************** Consultation Article **************/
