@@ -72,7 +72,7 @@ header .wrapper{
 }
 
 header{
-    border-bottom: #a0a0a049 dashed .20rem;
+    border-bottom: #a0a0a065 dashed .20rem;
     border-radius: 50%;
 }
 
@@ -243,23 +243,30 @@ article p:nth-of-type(2) {
 
 /************** Footer **************/
 footer {
-    color: #ffffff;
-    background-image: url("../images/footerbackground.jpg");
+    background: url("../images/footerbackground.jpg") no-repeat;
     background-size: cover;
-    border-top: #a0a0a049 dashed .15rem;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
+    border-top: #a0a0a065 dashed .20rem;
+    border-top-left-radius: 90% 60%;
+    border-top-right-radius: 90% 60%;
     background-clip: content-box;
-    padding: .5rem;
+    padding-top: .7rem;
+}
+
+footer .wrapper {
+    max-width: 65rem;
+    margin: 0rem auto;
+    padding: 5rem 0;
 }
 
 footer li {
     display: inline-block;
-    line-height: 10rem;
+    line-height: 15rem;
 }
 
 footer li a {
     color: transparent;
+    font-size: .001rem;
+    margin-left: 2rem;
 }
 
 footer a, footer h2, footer p {
@@ -267,28 +274,32 @@ footer a, footer h2, footer p {
 }
 
 footer h2 {
-    margin: 1rem 30rem 1rem 30rem;
-    border-top: #e0b1a988 dashed .10rem;
+    border-top: #e0b1a988 dashed .15rem;
     background-clip: content-box;
-    padding-top: 2rem;
+    padding-top: 3rem;
+    margin: 1rem;
+}
+
+footer p {
+    font-size: 1.4rem;
 }
 
 input {
-    width: 25rem;
-    height: 2rem;
-    font-size: .9rem;
+    width: 40rem;
+    height: 3rem;
+    font: 400 1.4rem/1.2 'Open Sans', sans-serif;
     color: #777777;
     text-indent: 1rem;
+    margin-bottom: 5rem;
 }
 
 button {
     border: 0;
     padding: .6rem 3.5rem;
-    font-size: .9rem;
-    font-weight: 700;
+    font: 700 1.4rem 'Open Sans', sans-serif;
     background-color: #c89e97;
     color: #ffffff;
-    margin-left: 1.3rem;
+    margin-left: 1.6rem;
 }
 
 button:hover {
