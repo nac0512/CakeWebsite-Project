@@ -339,3 +339,20 @@ footer li:nth-of-type(4) a::before {
 footer li:nth-of-type(5) a::before {
     content: url("../images/pinterest-sign.png");
 }
+
+/************** Google Maps **************/
+#map div{
+    max-width: 117rem;
+    margin: 0 auto;
+    overflow:hidden;
+    position:relative;
+    height:42.5rem;
+}
+
+#map div iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
