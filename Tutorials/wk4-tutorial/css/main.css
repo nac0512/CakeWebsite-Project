@@ -1,0 +1,247 @@
+/* Google Fonts 
+====================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,300&display=swap');
+
+/* CSS RESET
+====================================================================== */
+
+body, button, fieldset, form, label, input, textarea, select, h1, h2, h3, p, a, ul, li, dt, dd {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* BASE 10
+====================================================================== */
+
+html {
+    font-size: 62.5%;
+}
+
+/* BODY
+====================================================================== */
+
+body {
+    height: 100vh;
+    padding: 0 2rem;
+    font: 1.5rem/1.4 'Open Sans', Helvetica, Arial, sans-serif;
+    background: rgb(34,34,34); 
+    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0, 0, 0, 0.5) 100%);  
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* DEFAULTS 
+====================================================================== */
+
+h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: -0.15rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.75);
+}
+
+h2 strong {
+    font-weight: 800;
+}
+
+form p {
+    margin-top: 2rem;
+}
+
+a {
+    color: #c0392b;
+}
+
+/* Section Containers 
+====================================================================== */
+
+form {
+    max-width: 100rem;
+    margin: 8rem auto 5rem auto;
+    padding: 3rem;
+    background: #ffffff;
+}
+
+/* Clearfix */
+
+form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* FIELDSETS 
+====================================================================== */
+
+/* Name: First & Last */
+
+#name {
+    padding: 4rem 0 2rem 0;
+}
+
+#name div:nth-of-type(1) {
+    width: calc(100%/2 - 1rem);
+    float: left;
+    margin-right: 1rem;
+}
+
+#name div:nth-of-type(2) {
+    width: calc(100%/2 - 1rem);
+    float: right;
+}
+
+/* Email & Phone */
+
+#contact div:nth-of-type(2) {
+    margin-top: 2rem;
+}
+
+/* Credit Card */
+
+#card {
+    padding: 4rem 0 6rem 0;
+}
+
+#card div:nth-of-type(1) {
+    width: calc(100%/3 * 2 - 1rem);
+    float: left;
+    margin-right: 1rem;
+}
+
+#card div:nth-of-type(2) {
+    width: calc(100%/3 - 1rem);
+    float: right;
+}
+
+#card div:nth-of-type(3) {
+    width: calc(100%/3 - 1rem);
+    float: left;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+#card div:nth-of-type(4) {
+    width: calc(100%/3 - 1rem);
+    float: left;
+    margin-top: 2rem;
+}
+
+form>fieldset {
+    width: calc(50% - 2rem);
+    float: left;
+}
+
+form>fieldset:not(:nth-of-type(2)) {
+    margin-right: 4rem;
+}
+
+/* LABELS
+====================================================================== */
+
+label:not(.error) {
+    display: none;
+}
+
+/* INPUTS
+====================================================================== */
+
+input, textarea {
+    width: 100%;
+    padding: 1rem 0;
+    background: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+input:focus, textarea:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}
+
+textarea {
+    height: 15rem;
+}
+
+select {
+    padding: 1rem 4rem 1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+option {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+/* AMOUNT PRESETS
+====================================================================== */
+
+.presets {
+    margin: 3rem 0;
+    padding: 0;
+}
+
+.presets li {
+    list-style-type: none;
+}
+
+.presets label {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.presets input[type="radio"] {
+    width: auto;
+}
+
+.presets input[type="checkbox"] {
+    width: auto;
+}
+
+/* SUBMIT
+====================================================================== */
+
+button[type='submit'].disabled {
+    cursor: not-allowed;
+    opacity: 0.15
+}
+
+button[type='submit'] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button[type='submit']:not(.disabled):hover {
+    color: rgba(255, 255, 255, 0.85);
+    transform: scale(1.075);
+}
+
+button[type='submit']:not(.disabled):active {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}

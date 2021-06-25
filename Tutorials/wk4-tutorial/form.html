@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form action="#urlfordata" method="post">
+        <fieldset id="donation">
+            <h2><strong>Donate</strong> Today</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum aliquam blanditiis voluptates tempore mollitia velit nulla? Dolores veniam molestiae ipsa aperiam, libero distinctio debitis itaque id consequuntur quod. Tempora!</p>
+            <fieldset id="presets">
+                <div>
+                    <label for="search">Charity Name</label>
+                    <input type="search" id="search" name="search" placeholder="Charity Name" required="required">
+                </div>
+                <ul class="presets">
+                    <li>
+                        <input type="radio" name="preset" value="five" id="five" required="required">
+                        <label for="five">$5</label> 
+                    </li>
+                    <li>
+                        <input type="radio" name="preset" value="ten" id="ten" required="required">
+                        <label for="ten">$10</label> 
+                    </li>
+                    <li>
+                        <input type="radio" name="preset" value="fifteen" id="fifteen" required="required">
+                        <label for="fifteen">$15</label> 
+                    </li>
+                    <li>
+                        <input type="radio" name="preset" value="twenty" id="twenty" required="required">
+                        <label for="twenty">$20</label> 
+                    </li>
+                    <li>
+                        <input type="radio" name="preset" value="twentyfive" id="twentyfive" required="required">
+                        <label for="twentyfive">$25</label> 
+                    </li>
+                </ul>
+                <ul class="presets">
+                    <li>
+                        <input type="checkbox" name="preset" value="fivedollars" id="fivedollars" required="required">
+                        <label for="fivedollars">Five Dollars</label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="preset" value="tendollars" id="tendollars" required="required">
+                        <label for="tendollars">Ten Dollars</label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="preset" value="fifteendollars" id="fifteendollars" required="required">
+                        <label for="fifteendollars">Fifteen Dollars</label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="preset" value="twentydollars" id="twentydollars" required="required">
+                        <label for="twentydollars">Twenty Dollars</label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="preset" value="twentyfivedollars" id="twentyfivedollars" required="required">
+                        <label for="twentyfivedollars">Twenty-Five Dollars</label> 
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset id="comment">
+                <div>
+                    <label for="comment">Leave A Comment</label> 
+                    <textarea name="comment" id="comment" maxlength="500" placeholder="Leave A Comment"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Save Comment</button>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="payment">
+            <h2><strong>Payment</strong> Details</h2>
+            <p>We accept all major credit cards</p>
+            <fieldset id="name">
+                <div>
+                    <label for="fname">First Name</label> 
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required="required">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="last Name" required="required"> 
+                </div>
+            </fieldset>
+            <fieldset id="contact">
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone"> 
+                </div>
+            </fieldset>
+            <fieldset id="card">
+                <div>
+                    <label for="card-number">Credit Card Number</label>
+                    <input type="text" name="card-number" id="card-number" placeholder="Credit Card Number" required="required">
+                </div>
+                <div>
+                    <label for="card-cvv">CVV</label>
+                    <input type="text" name="card-cvv" id="card-cvv" placeholder="CVV" required="required">
+                </div>
+                <div>
+                    <label for="card-exp-month">Expiration Month</label>
+                    <select name="card-exp-month" id="card-exp-month">
+                        <option value="">Month</option>
+                        <option value="01">January</option> 
+                        <option value="02">February</option> 
+                        <option value="03">March</option> 
+                        <option value="04">April</option> 
+                        <option value="05">May</option> 
+                        <option value="06">June</option> 
+                        <option value="07">July</option> 
+                        <option value="08">August</option> 
+                        <option value="09">September</option> 
+                        <option value="10">October</option> 
+                        <option value="11">November</option> 
+                        <option value="12">December</option>  
+                    </select>
+                </div>
+                <div>
+                    <label for="card-exp-year">Expiration Year</label>
+                    <select name="card-exp-year" id="card-exp-year">
+                        <option value="">Year</option>
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                    </select>
+                </div>
+    
+            </fieldset>
+            <div>
+                <button type="submit">Submit Donation</button>
+            </div>
+            <p class="terms">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellat doloremque eveniet non incidunt molestiae vero ab qui sit <a href="#">terms</a> &amp; <a href="#">privacy policy</a>.</p>
+        </fieldset>
+        <fieldset>
+            <div>
+                <p>Have a charity you'd like to add to the donation list? Link them here!</p>
+                <input type="url" id="url" name="url">
+                <label for="url">Charity URL</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
