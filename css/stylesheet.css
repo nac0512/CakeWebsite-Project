@@ -1,7 +1,7 @@
 /* ************* Cross Sections ************* */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
-body, header, nav, section, article, footer, h1, h2, h3, p, ul, li, table, a, input, button {
+body, header, nav, section, article, footer, h1, h2, h3, p, ul, li, table, a, input, textarea, button {
     margin: 0;
     padding: 0;
     font-size: 100%;
@@ -9,6 +9,8 @@ body, header, nav, section, article, footer, h1, h2, h3, p, ul, li, table, a, in
     text-decoration: none;
     font-weight: normal;
     color: #777777;
+    border: none;
+    outline: none;
 }
 
 html {
@@ -74,6 +76,7 @@ header .wrapper{
     left: 0;
     right: 0;
     background-color: #ffffff;
+    z-index: 2;
 }
 
 header{
@@ -356,3 +359,54 @@ footer li:nth-of-type(5) a::before {
     width:100%;
     position:absolute;
 }
+
+/************** Form **************/
+#contactform {
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 7.6rem 0 7.6rem 0;
+}
+
+#contactform div:nth-of-type(1), #contactform div:nth-of-type(4) {
+    width: 100%;
+}
+
+#contactform div:nth-of-type(2) {
+    width: calc(100%/2 - 4rem);
+    float: left;
+    margin-right: 4rem;
+}
+#contactform div:nth-of-type(3) {
+    width: calc(100%/2 - 4rem);
+    float: right;
+}
+
+/************** Inputs & Labels **************/
+label {
+    display: none;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 1.9rem;
+    padding: 7.5px 20px 7.5px;
+    font: 400 16px 'Open Sans', sans-serif;
+    color: #999999;
+}
+
+input {
+padding-top: 1.5rem;
+border-bottom: 1px solid #bcbcbc;
+}
+
+textarea {
+    border: 1px solid #bcbcbc;
+    height: 16.4rem;
+    margin-top: 5rem;
+}
+
+#contactform button {
+    margin-top: 6.6rem;
+    padding: .7rem 4.5rem;
+}
+
