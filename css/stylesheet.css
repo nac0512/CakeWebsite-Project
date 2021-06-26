@@ -1,7 +1,7 @@
 /* ************* Cross Sections ************* */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
-body, header, nav, section, article, footer, h1, h2, h3, p, ul, li, table, a, input, textarea, button {
+body, header, nav, section, article, footer, h1, h2, h3, p, ul, li, table, a, input, fieldset, textarea, button {
     margin: 0;
     padding: 0;
     font-size: 100%;
