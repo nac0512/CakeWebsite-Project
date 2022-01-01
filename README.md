@@ -4,15 +4,15 @@
 
 ### Navigation 
 * Cakes Page
-    ** Header
-    ** Variety of Cakes Sections 
-    **  Pricing Section
-    ** Consultation Section 
-    ** Gallery Section 
-    ** Flavors and Fillings Section 
-    ** Footer
+    * Header
+    * Variety of Cakes Sections 
+    *  Pricing Section
+    * Consultation Section 
+    * Gallery Section 
+    * Flavors and Fillings Section 
+    * Footer
 * Contact Page
-    ** Header
-    ** Location embedded with Google Maps
-    ** Contact Form
-    ** Footer
+    * Header
+    * Location embedded with Google Maps
+    * Contact Form
+    * Footer
