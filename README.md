@@ -1,8 +1,11 @@
 # CakeWebsiteProject
 
-## This is a project I built to demonstrate my knowledge of standard HTML and css. This project is simply to be used for demonstration purposes.
+This is a project I built to demonstrate my knowledge of standard HTML and css. This project is for *demonstration purposes only*. 
 
-### Navigation 
+To view the Wedding Cakes Project live, [Click Here](https://nac0512.github.io/CakeWebsiteProject/). Right click if you wish to open in new tab.
+
+## Navigation
+
 * Cakes Page
     * Header
     * Variety of Cakes Sections 
