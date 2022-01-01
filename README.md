@@ -2,7 +2,7 @@
 
 This is a project I built to demonstrate my knowledge of standard HTML and css. This project is for *demonstration purposes only*. 
 
-To view the Wedding Cakes Project live, [Click Here](https://nac0512.github.io/CakeWebsiteProject/). Right click if you wish to open in new tab.
+To view the Wedding Cakes Project live, [Click Here](https://nac0512.github.io/CakeWebsite-Project/). Right click if you wish to open in new tab.
 
 ## Navigation
 
