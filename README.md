@@ -1,4 +1,4 @@
-# CakeWebsiteProject
+# Cake Website Project
 
 This is a project I built to demonstrate my knowledge of standard HTML and css. This project is for *demonstration purposes only*. 
 
